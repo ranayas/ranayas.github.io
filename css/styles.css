@@ -8,10 +8,11 @@ body {
 }
 
 .u-wrapper {
-  max-width: 1200px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .menu-checkbox {
@@ -19,9 +20,10 @@ body {
 }
 
 .header {
-  width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar {
@@ -60,4 +62,43 @@ body {
 
 .navbar__button {
   display: none;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.hero__avatar {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__title {
+  letter-spacing: -0.1em;
+  font-size: 5rem;
+  display: block;
+  font-weight: bold;
+}
+
+.hero__subtitle {
+  letter-spacing: -0.1em;
+  font-weight: bold;
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.hero__links {
+  font-size: 2em;
+  font-style: none;
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .hero__title {
+    font-size: 10vw;
+  }
 }
