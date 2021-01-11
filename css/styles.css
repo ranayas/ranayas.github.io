@@ -24,6 +24,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .navbar {
@@ -37,13 +39,20 @@ body {
   padding: 1em;
 }
 
+.navbar__fixed-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navbar__logo {
   display: flex;
   align-items: center;
 }
 
-.navbar__menu {
-  margin-left: auto;
+.navbar__button {
+  display: none;
+  font-size: 2em;
+  align-items: center;
 }
 
 .navbar__menu > ul {
@@ -58,10 +67,6 @@ body {
 
 .navbar__menu > ul > li > a {
   display: block;
-}
-
-.navbar__button {
-  display: none;
 }
 
 .hero {
@@ -98,6 +103,32 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+  .header {
+  }
+  .navbar {
+    display: block;
+  }
+
+  .navbar__button {
+    display: inline-flex;
+  }
+
+  .navbar__button:hover {
+    cursor: pointer;
+  }
+
+  .menu-checkbox:checked ~ .header > div > div > nav {
+    display: none;
+  }
+
+  .navbar__menu > ul {
+    display: block;
+  }
+
+  .navbar__menu > ul > li > a {
+    text-align: center;
+  }
+
   .hero__title {
     font-size: 10vw;
   }
