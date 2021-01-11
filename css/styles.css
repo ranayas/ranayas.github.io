@@ -1,0 +1,63 @@
+* {
+  font-family: Inter;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 4em;
+}
+
+.u-wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1em;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu {
+  margin-left: auto;
+}
+
+.navbar__menu > ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__menu > ul > li {
+  list-style: none;
+}
+
+.navbar__menu > ul > li > a {
+  display: block;
+}
+
+.navbar__button {
+  display: none;
+}
