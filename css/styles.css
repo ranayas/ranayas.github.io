@@ -120,35 +120,6 @@ body {
   .menu-checkbox:checked ~ .header > div > div > .navbar__menu {
     display: block;
   }
-  /*
-  .navbar {
-    display: block;
-  }
-
-  .navbar__button {
-    display: inline-flex;
-  }
-
-  .navbar__button:hover {
-    cursor: pointer;
-  }
-
-  .menu-checkbox:checked ~ .header > div > div > nav {
-    display: none;
-  }
-
-  .menu-checkbox:not(:checked) ~ .header {
-    box-shadow: 0px 1px lightgray;
-  }
-
-  .navbar__menu > ul {
-    display: block;
-  }
-
-  .navbar__menu > ul > li > a {
-    text-align: center;
-  }
-  */
 }
 
 .hero {
@@ -284,6 +255,17 @@ body {
 
 .section__grid__card__content {
   text-align: center;
+}
+
+.section__grid__card__content__button {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid lightgray;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .portfolio {
