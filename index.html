@@ -48,7 +48,7 @@
           <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#stack">Stack</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
           </ul>
         </nav>
       </div>
@@ -56,7 +56,7 @@
   </header>
   <main class="hero">
     <div class="u-wrapper">
-      <img src="" alt="" id="avatar" class="hero__avatar" />
+      <img src="" alt="avatar" id="avatar" class="hero__avatar" />
       <h1>
         <span class="hero__title">Renzo Anaya</span>
         <span class="hero__subtitle">Desarrollador de Software</span>
@@ -64,55 +64,71 @@
       <a class="hero__links" href="#"><i class="fab fa-github"></i></a>
     </div>
   </main>
-  <section id="stack" class="stack">
+  <section id="stack" class="section">
     <div class="u-wrapper">
       <h2 class="section__title section__title--green">Stack</h2>
       <h3 class="section__subtitle">Backend</h3>
-      <div class="stack__grid">
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/php.png" alt="PHP">
+      <div class="section__grid">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image" src="img/php.png" alt="PHP">
           </div>
-          <p class="stack__grid__card__content">PHP</p>
+          <p class="section__grid__card__content">PHP</p>
         </div>
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/laravel.png" alt="Laravel">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/laravel.png" alt="Laravel">
           </div>
-          <p class="stack__grid__card__content">Laravel</p>
+          <p class="section__grid__card__content">Laravel</p>
         </div>
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/nodejs.png" alt="Node.js">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/nodejs.png" alt="Node.js">
           </div>
-          <p class="stack__grid__card__content">Node.js</p>
+          <p class="section__grid__card__content">Node.js</p>
         </div>
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/express.png" alt="Express">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/express.png" alt="Express">
           </div>
-          <p class="stack__grid__card__content">Express</p>
+          <p class="section__grid__card__content">Express</p>
         </div>
       </div>
       <h3 class="section__subtitle">Frontend</h3>
-      <div class="stack__grid">
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/JavaScript.png" alt="JavaScript">
+      <div class="section__grid">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/JavaScript.png" alt="JavaScript">
           </div>
-          <p class="stack__grid__card__content">JavaScript</p>
+          <p class="section__grid__card__content">JavaScript</p>
         </div>
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/HTML.png" alt="HTML">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/HTML.png" alt="HTML">
           </div>
-          <p class="stack__grid__card__content">HTML</p>
+          <p class="section__grid__card__content">HTML</p>
         </div>
-        <div class="stack__grid__card">
-          <div class="stack__grid__card__body">
-            <img class="stack__grid__card__body__image" src="img/css.png" alt="CSS">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/css.png" alt="CSS">
           </div>
-          <p class="stack__grid__card__content">CSS</p>
+          <p class="section__grid__card__content">CSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio" id="portafolio">
+    <div class="u-wrapper">
+      <h2 class="section__title section__title--cyan">Portafolio</h2>
+      <div class="section__grid section__grid--min-25">
+        <div class="section__grid__card">
+          <div class="section__grid__card__body">
+            <h3 class="section__grid__card__body__title">xBlog</h3>
+            <div class="section__grid__card__body__tags">
+              <small>Node.js | JavaScript | MongoDB | Express</small>
+            </div>
+          </div>
+          <p class="section__grid__card__content">Servicio web RESTful de un Blog con roles y permisos, y autenticacion vía JSON Web Token</p>
         </div>
       </div>
     </div>
