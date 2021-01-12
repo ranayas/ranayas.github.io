@@ -8,6 +8,15 @@ async function init() {
 
   const $avatar = document.querySelector('#avatar');
   $avatar.setAttribute('src', avatar);
+
+  document.addEventListener('scroll', function () {
+    $header = document.getElementById('header');
+    if (document.documentElement.scrollTop !== 0) {
+      $header.classList.add('header--border');
+    } else {
+      $header.classList.remove('header--border');
+    }
+  });
 }
 
 init();
