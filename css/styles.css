@@ -78,9 +78,49 @@ body {
 
 .navbar__menu > ul > li > a {
   display: block;
+  color: dimgray;
+}
+.navbar__menu > ul > li > a:hover {
+  color: black;
 }
 
 @media screen and (max-width: 960px) {
+  .navbar__button {
+    display: inline-flex;
+  }
+
+  .navbar__button:hover {
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__menu > ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar__menu > ul > li {
+    width: 100%;
+  }
+
+  .navbar__menu > ul > li > a {
+    text-align: center;
+  }
+
+  .menu-checkbox:checked ~ .header {
+    box-shadow: 0px 1px lightgray;
+  }
+  .menu-checkbox:checked ~ .header > div > div > .navbar__menu {
+    display: block;
+  }
+  /*
   .navbar {
     display: block;
   }
@@ -97,6 +137,10 @@ body {
     display: none;
   }
 
+  .menu-checkbox:not(:checked) ~ .header {
+    box-shadow: 0px 1px lightgray;
+  }
+
   .navbar__menu > ul {
     display: block;
   }
@@ -104,6 +148,7 @@ body {
   .navbar__menu > ul > li > a {
     text-align: center;
   }
+  */
 }
 
 .hero {
