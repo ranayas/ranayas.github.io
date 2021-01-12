@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: Inter;
   box-sizing: border-box;
@@ -5,6 +9,7 @@
 
 body {
   padding-top: 4em;
+  height: 100vh;
 }
 
 .u-wrapper {
@@ -53,6 +58,7 @@ body {
   display: none;
   font-size: 2em;
   align-items: center;
+  user-select: none;
 }
 
 .navbar__menu > ul {
@@ -67,6 +73,32 @@ body {
 
 .navbar__menu > ul > li > a {
   display: block;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    display: block;
+  }
+
+  .navbar__button {
+    display: inline-flex;
+  }
+
+  .navbar__button:hover {
+    cursor: pointer;
+  }
+
+  .menu-checkbox:checked ~ .header > div > div > nav {
+    display: none;
+  }
+
+  .navbar__menu > ul {
+    display: block;
+  }
+
+  .navbar__menu > ul > li > a {
+    text-align: center;
+  }
 }
 
 .hero {
@@ -103,33 +135,72 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .header {
-  }
-  .navbar {
-    display: block;
-  }
-
-  .navbar__button {
-    display: inline-flex;
-  }
-
-  .navbar__button:hover {
-    cursor: pointer;
-  }
-
-  .menu-checkbox:checked ~ .header > div > div > nav {
-    display: none;
-  }
-
-  .navbar__menu > ul {
-    display: block;
-  }
-
-  .navbar__menu > ul > li > a {
-    text-align: center;
-  }
-
   .hero__title {
     font-size: 10vw;
   }
+}
+
+.section__title {
+  font-size: 4em;
+  letter-spacing: -0.1em;
+  text-align: center;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.section__title--green {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 232, 73, 1) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__subtitle {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: -0.1em;
+}
+
+.stack {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.stack__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 8rem));
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.stack__grid__card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.stack__grid__card__body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.stack__grid__card__body__image {
+  padding: 1em;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+.stack__grid__card__content {
+  text-align: center;
 }
