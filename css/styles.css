@@ -251,12 +251,19 @@ body {
 
 .section__grid__card__body__tags {
   text-align: center;
+  padding: 1em 0;
 }
 
 .section__grid__card__content {
   text-align: center;
 }
 
+.section__grid__card__content__image__container {
+}
+
+.section__grid__card__content__image {
+  height: 14em;
+}
 .section__grid__card__content__button {
   display: inline-block;
   padding: 1em;

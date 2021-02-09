@@ -4,7 +4,6 @@ async function init() {
   const avatar = await fetch(GITHUB_API)
     .then((response) => response.json())
     .then((data) => data.avatar_url);
-  console.log(avatar);
 
   const $avatar = document.querySelector('#avatar');
   $avatar.setAttribute('src', avatar);

@@ -1,143 +1,225 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
 
-  <!-- Normalize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Inter Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Renzo Anaya</title>
+  </head>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Renzo Anaya</title>
-</head>
-
-<body>
-  <input type="checkbox" id="menu-opener" class="menu-checkbox" />
-  <header id="header" class="header">
-    <div class="u-wrapper">
-      <div class="navbar">
-        <div class="navbar__fixed-content">
-          <a class="navbar__logo" href="#">
-            Renzo Anaya
-          </a>
-          <label for="menu-opener" class="navbar__button"><i class="fas fa-hamburger"></i></label>
-        </div>
-        <nav class="navbar__menu">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#stack">Stack</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main class="hero">
-    <div class="u-wrapper">
-      <img src="" alt="avatar" id="avatar" class="hero__avatar" />
-      <h1>
-        <span class="hero__title">Renzo Anaya</span>
-        <span class="hero__subtitle">Desarrollador de Software</span>
-      </h1>
-      <a class="hero__links" href="#"><i class="fab fa-github"></i></a>
-    </div>
-  </main>
-  <section id="stack" class="section">
-    <div class="u-wrapper">
-      <h2 class="section__title section__title--green">Stack</h2>
-      <h3 class="section__subtitle">Backend</h3>
-      <div class="section__grid">
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image" src="img/php.png" alt="PHP">
+  <body>
+    <input type="checkbox" id="menu-opener" class="menu-checkbox" />
+    <header id="header" class="header">
+      <div class="u-wrapper">
+        <div class="navbar">
+          <div class="navbar__fixed-content">
+            <a class="navbar__logo" href="#"> Renzo Anaya </a>
+            <label for="menu-opener" class="navbar__button"
+              ><i class="fas fa-hamburger"></i
+            ></label>
           </div>
-          <p class="section__grid__card__content">PHP</p>
-        </div>
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/laravel.png" alt="Laravel">
-          </div>
-          <p class="section__grid__card__content">Laravel</p>
-        </div>
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/nodejs.png" alt="Node.js">
-          </div>
-          <p class="section__grid__card__content">Node.js</p>
-        </div>
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/express.png" alt="Express">
-          </div>
-          <p class="section__grid__card__content">Express</p>
+          <nav class="navbar__menu">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#stack">Stack</a></li>
+              <li><a href="#portafolio">Portafolio</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <h3 class="section__subtitle">Frontend</h3>
-      <div class="section__grid">
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/JavaScript.png" alt="JavaScript">
+    </header>
+    <main class="hero">
+      <div class="u-wrapper">
+        <img src="" alt="avatar" id="avatar" class="hero__avatar" />
+        <h1>
+          <span class="hero__title">Renzo Anaya</span>
+          <span class="hero__subtitle">Desarrollador de Software</span>
+        </h1>
+        <a class="hero__links" href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </main>
+    <section id="stack" class="section">
+      <div class="u-wrapper">
+        <h2 class="section__title section__title--green">Stack</h2>
+        <h3 class="section__subtitle">Backend</h3>
+        <div class="section__grid">
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <img
+                class="section__grid__card__body__image"
+                src="img/php.png"
+                alt="PHP"
+              />
+            </div>
+            <p class="section__grid__card__content">PHP</p>
           </div>
-          <p class="section__grid__card__content">JavaScript</p>
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <img
+                class="section__grid__card__body__image section__grid__card__body__image--w-5"
+                src="img/laravel.png"
+                alt="Laravel"
+              />
+            </div>
+            <p class="section__grid__card__content">Laravel</p>
+          </div>
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <img
+                class="section__grid__card__body__image section__grid__card__body__image--w-5"
+                src="img/nodejs.png"
+                alt="Node.js"
+              />
+            </div>
+            <p class="section__grid__card__content">Node.js</p>
+          </div>
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <img
+                class="section__grid__card__body__image section__grid__card__body__image--w-5"
+                src="img/express.png"
+                alt="Express"
+              />
+            </div>
+            <p class="section__grid__card__content">Express</p>
+          </div>
         </div>
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/HTML.png" alt="HTML">
+        <h3 class="section__subtitle">Frontend</h3>
+        <div class="section__grid">
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <img
+                class="section__grid__card__body__image section__grid__card__body__image--w-5"
+                src="img/JavaScript.png"
+                alt="JavaScript"
+              />
+            </div>
+            <p class="section__grid__card__content">JavaScript</p>
           </div>
-          <p class="section__grid__card__content">HTML</p>
-        </div>
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <img class="section__grid__card__body__image section__grid__card__body__image--w-5" src="img/css.png" alt="CSS">
+          <div class="section__grid__card">
+            <img
+              class="section__grid__card__body__image section__grid__card__body__image--w-5"
+              src="img/HTML.png"
+              alt="HTML"
+            />
+            <p class="section__grid__card__content">HTML</p>
           </div>
-          <p class="section__grid__card__content">CSS</p>
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <img
+                class="section__grid__card__body__image section__grid__card__body__image--w-5"
+                src="img/css.png"
+                alt="CSS"
+              />
+            </div>
+            <p class="section__grid__card__content">CSS</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="portfolio" id="portafolio">
-    <div class="u-wrapper">
-      <h2 class="section__title section__title--cyan">Portafolio</h2>
-      <div class="section__grid section__grid--min-25">
-        <div class="section__grid__card">
-          <div class="section__grid__card__body">
-            <h3 class="section__grid__card__body__title">xBlog</h3>
-            <div class="section__grid__card__body__tags">
-              <small>Node.js | JavaScript | MongoDB | Express</small>
+    </section>
+    <section class="portfolio" id="portafolio">
+      <div class="u-wrapper">
+        <h2 class="section__title section__title--cyan">Portafolio</h2>
+        <div class="section__grid section__grid--min-25">
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <h3 class="section__grid__card__body__title">Laralinks</h3>
+              <div class="section__grid__card__body__tags">
+                <small>Larvel | PHP</small>
+              </div>
+            </div>
+            <div class="section__grid__card__content">
+              <div class="section__grid__card__content__image__container">
+                <img
+                  class="section__grid__card__content__image"
+                  src="img/laralinks.png"
+                />
+              </div>
+              <p>Clon de Linktree hecho en laravel.</p>
+              <a
+                class="section__grid__card__content__button"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://laralinks.herokuapp.com"
+                >Live</a
+              >
+              <a
+                class="section__grid__card__content__button"
+                href="https://github.com/ranayas/laralinks"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
             </div>
           </div>
-          <div class="section__grid__card__content">
-            <p>Servicio web RESTful de un Blog con roles y permisos, y autenticacion vía JSON Web Token</p>
-            <a class="section__grid__card__content__button">
-              Código</a>
+          <div class="section__grid__card">
+            <div class="section__grid__card__body">
+              <h3 class="section__grid__card__body__title">xClothes</h3>
+              <div class="section__grid__card__body__tags">
+                <small>HTML | CSS</small>
+              </div>
+            </div>
+            <div class="section__grid__card__content">
+              <div class="section__grid__card__content__image__container">
+                <img
+                  class="section__grid__card__content__image"
+                  src="img/xclothes.png"
+                />
+              </div>
+              <p>Modelo de Tienda de ropa.</p>
+              <a
+                class="section__grid__card__content__button"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ranayas.github.io/xClothes"
+                >Live</a
+              >
+              <a
+                class="section__grid__card__content__button"
+                href="https://github.com/ranayas/xClothes"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Código</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <script src="js/app.js"></script>
-</body>
-
+    </section>
+    <script src="js/app.js"></script>
+  </body>
 </html>
