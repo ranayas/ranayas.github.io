@@ -1,4 +1,4 @@
-const GITHUB_API = 'https://api.github.com/users/ranayas';
+const GITHUB_API = 'https://api.github.com/users/renzoansa';
 
 async function init() {
   const avatar = await fetch(GITHUB_API)
